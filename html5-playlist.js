@@ -1,4 +1,7 @@
 (function (document, window) {
+    // html5-playlist.js
+    // (c) Severák 2021
+    // MIT-licensed
     if (window.NodeList && !NodeList.prototype.forEach) {
         NodeList.prototype.forEach = function (callback, thisArg) {
             thisArg = thisArg || window;

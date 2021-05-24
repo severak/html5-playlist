@@ -1,8 +1,10 @@
-# html5-playlist
+# html5-playlist.js
 
-adds missing playlist to HTML5 audio element.
+Just simple script that adds missing playlist functionality to HTML5 audio element.
 
-## How?
+See [live demo](https://severak.github.io/html5-playlist/).
+
+## How to use it?
 
 Add your audio element with first song of playlist and `data-playlist-id` attribute:
 
@@ -10,7 +12,7 @@ Add your audio element with first song of playlist and `data-playlist-id` attrib
 <audio src="trololo.mp3" controls data-playlist-id="my_awesome_playlist"></audio>
 ```
 
-Add playlist iself as `li` of `a` tags:
+Add playlist itself as list of links:
 
 ```
 <ul id="my_awesome_playlist">
@@ -19,7 +21,9 @@ Add playlist iself as `li` of `a` tags:
 </ul>
 ```
 
-Include javascript file AFTER playlist:
+Note that currently playing song in playlist will have `current-track` class on link.
+
+Include javascript file AFTER the playlist (at end of the page):
 
 ```
 <script src="html5-playlist.js"></script>
