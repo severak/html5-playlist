@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>html5 playlist demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body {
+        font-family: "Lucida Console", monospace;
+        background-color: plum;
+    }
+
+    .container {
+        width: 30em;
+        margin: auto;
+        padding: 1em;
+        background-color: #FFCC66;
+    }
+
+    audio {
+        width: 98%;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .current-track {
+        background-color: black;
+        color: #FFCC66;;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+<h1>html5 playlist demo</h1>
+
+<p>just some my tracks:</p>
+<audio src="02-anke.mp3" controls data-playlist-id="playlist"></audio>
+<ul id="playlist">
+	<li><a href="02-anke.mp3">Anke</a></li>
+	<li><a href="09-metalik.mp3">Metalik</a></li>
+	<li><a href="14-regenschori.mp3">Regenschori</a></li>
+</ul>
+
+<p>one <code>audio</code> without playlist:</p>
+<audio src="09-metalik.mp3" controls></audio>
+
+<p>another <code>audio</code> instance, this one pretending to be meme playlist:</p>
+<audio src="14-regenschori.mp3" controls data-playlist-id="meme_playlist"></audio>
+<ul id="meme_playlist">
+    <li><a href="14-regenschori.mp3">loituma.swf</a></li>
+    <li><a href="02-anke.mp3">Sandstorm by Darude</a></li>
+    <li><a href="09-metalik.mp3">trololo.mp3</a></li>
+</ul>
+
+<p>Note: Chrome would not play multiple <code>audio</code> elements with same <code>src</code>.</p>
+
+<p>(demo of <a href="https://github.com/severak/html5-playlist">severak/html5-playlist</a>)</p>
+
+</div>
+
+<script src="html5-playlist.js"></script>
+
+</body>
+<html>
+
