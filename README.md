@@ -2,7 +2,7 @@
 
 Just simple script that adds missing playlist functionality to HTML5 audio element.
 
-See [live demo](https://severak.github.io/html5-playlist/).
+See [live demo](https://severak.github.io/html5-playlist/) or [real world use](http://svita.cz/pro-veronyku/).
 
 ## How to use it?
 
