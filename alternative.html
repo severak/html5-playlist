@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>alternative html5 playlist</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: "Lucida Console", monospace;
+      background-color: plum;
+    }
+
+    .container {
+      width: 30em;
+      margin: auto;
+      padding: 1em;
+      background-color: #FFCC66;
+    }
+
+    audio {
+      width: 98%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>alternative approach</h1>
+    <p>Just include one magical javascript, some audio tags and everything works as expected:</p>
+    <p>Anke</p>
+    <audio controls src="02-anke.mp3" preload="auto"></audio>
+    <p>Metalik</p>
+    <audio controls src="09-metalik.mp3" preload="metadata"></audio>
+    <p>Regenschori</p>
+    <audio controls src="14-regenschori.mp3" preload="metadata"></audio>
+    <p>(alternative version of <a href="https://github.com/severak/html5-playlist">severak/html5-playlist</a>)</p>
+    <p>(<a href="index.html">original version</a>)</p>
+  </div>
+  <script src="auto-playlist.js"></script>
+</body>
+</html>
